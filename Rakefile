@@ -75,6 +75,6 @@ end
 task :default => :parse
 
 task :parse do
-  entries = parse(File.read('longman3000.txt'))
-  File.write('longman3000.json', JSON.pretty_generate(entries))
+  entries = parse(File.read('longman-communication-3000.txt'))
+  File.write('longman-communication-3000.json', JSON.pretty_generate(entries))
 end
